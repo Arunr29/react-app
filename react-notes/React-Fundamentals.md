@@ -9,6 +9,12 @@ WHAT IS REACT?
 Why React is used instead of JAVASCRIPT?
 =>It's used for building interactive user interfaces and web applications quickly and efficiently with significantly less code than you would with vanilla JavaScript.
 
+How to create React application?
+=>npx create-react-app your-app-name
+=>npm install
+=>npm start to run the application
+=>The application will run in localhost:3000
+
 # Basics and Fundamentals of react
 ==================================
 React is all about "Components".
@@ -38,5 +44,22 @@ Follow these steps.
 2.And then ultimately you import it in the file
 3.where you wanna use it so that they're in the JSX code,
 4.you can use it like an HTML element inside the function
+
+How to add or run css in jsx?
+The only reason it uses className instead of class is because class is a reserved keyword in JavaScript and since React uses JSX, which is a JavaScript extension, we must use className rather than class attribute.
+Import css file in the component.
+
+Outputting Dynamic Data & Working with Expressions in JSX?
+Its typically data binding like we used in angular like this {{someData}} string interpolation
+But in react jsx uses single curly brace to output dynamic data 
+const name = "Arun";
+{name} => it will display the name as Arun.
+
+Working with props?
+We can use data from one component to another using props.
+Each component will have one parameters we can use.
+Like we did in the App.js file.
+
+
 
 
