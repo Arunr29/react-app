@@ -1,5 +1,7 @@
 import "./ExpenseItem.css";
 import ExpenseDate from "./ExpenseDate";
+import Card from "../UI/Card";
+import React from "react";
 
 function ExpenseItem(props) {
   //Hard-coded variables
@@ -8,7 +10,7 @@ function ExpenseItem(props) {
   // const expensePrice = 294.67;
   const dollar = "$";
   return (
-    <div className="expense-item">
+    <Card className="expense-item">
       <ExpenseDate date={props.date} />
       <div className="expense-item__description">
         <h2>{props.title}</h2>
@@ -17,7 +19,7 @@ function ExpenseItem(props) {
           {dollar}
         </div>
       </div>
-    </div>
+    </Card>
   );
 }
 

@@ -1,4 +1,5 @@
-import ExpenseData from "./components/ExpenseData";
+import ExpenseData from "./components/Expenses/ExpenseData";
+import React from "react";
 
 
 function App() {
@@ -28,7 +29,9 @@ function App() {
       date: new Date(2021, 5, 12),
     },
   ];
-
+  // return React.createElement('div', {},
+  //   React.createElement('h2', {}, "Let's get started!",
+  //     React.createElement(ExpenseData, { items: expenses })))
   return (
     <div>
       <h2>Let's get started!</h2>

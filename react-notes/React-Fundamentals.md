@@ -60,6 +60,8 @@ We can use data from one component to another using props.
 Each component will have one parameters we can use.
 Like we did in the App.js file.
 
-
+What are props children properties?
+Image result for children props in react
+The { props. children } property allows you to create a generic template component that can be modified by the parent when it is invoked. This means that a parent component can pass whatever is needed in the child component, even generated layout features that can then be rendered by the child.
 
 
