@@ -1,18 +1,17 @@
 import "./ExpenseItem.css";
 import ExpenseDate from "./ExpenseDate";
 import Card from "../UI/Card";
-import React from "react";
+import React, { useState } from "react";
 
 function ExpenseItem(props) {
-  //Hard-coded variables
-  // const expenseDate = new Date(2023, 2, 27);
-  // const expenseDescription = "Car Insuarance";
-  // const expensePrice = 294.67;
-  const dollar = "$";
-  let title = props.title;
 
-  const clickHandler = ()=>{
-    title = "Updated!";
+  let currentTitle = props.title;
+  const dollar = "$";
+  const [title, setTitle] = useState(currentTitle); //syntax using state
+
+  //adding a click event introducing state
+  const clickHandler = () => {
+      setTitle("Updated!");
     console.log(title);
   }
   return (
