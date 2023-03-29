@@ -4,10 +4,6 @@ import Card from "../UI/Card";
 import React from "react";
 
 function ExpenseItem(props) {
-  //Hard-coded variables
-  // const expenseDate = new Date(2023, 2, 27);
-  // const expenseDescription = "Car Insuarance";
-  // const expensePrice = 294.67;
   const dollar = "$";
   let title = props.title;
 
