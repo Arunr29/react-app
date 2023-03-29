@@ -64,4 +64,11 @@ What are props children properties?
 Image result for children props in react
 The { props. children } property allows you to create a generic template component that can be modified by the parent when it is invoked. This means that a parent component can pass whatever is needed in the child component, even generated layout features that can then be rendered by the child.
 
-User Interaction and State?
+Click event listener in react?
+In order to react to <button> clicks, the onClick={functionName} prop should be added to the <button> element.
+
+Working with state in react?
+import React,{useState} from react library.
+In order to change values & re-render the UI upon such changes, you must use "state" - a core React concept. In functional components, state can be registered via the useState() Hook. This Hook returns an array with exactly (!) two elements:
+1.The current state value
+2.A function that should be called to update the state value.
