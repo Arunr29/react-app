@@ -68,7 +68,21 @@ Click event listener in react?
 In order to react to <button> clicks, the onClick={functionName} prop should be added to the <button> element.
 
 Working with state in react?
+This is a function provided by the React library
+and this function allows us to define values
+as state where changes to these values should reflect
+in the component function being called again.
+
 import React,{useState} from react library.
 In order to change values & re-render the UI upon such changes, you must use "state" - a core React concept. In functional components, state can be registered via the useState() Hook. This Hook returns an array with exactly (!) two elements:
 1.The current state value
 2.A function that should be called to update the state value.
+
+If you have data, which might change,
+and where changes to that data should be reflected
+on the user interface
+then you need state
+because a regular variables will not do the trick
+with state, however you can set and change values in current component.
+%State really is separated on a per component instance basis.
+We can use multiple state in the components.
