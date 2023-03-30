@@ -9,22 +9,42 @@ function ExpenseForm() {
     //Date - useState
     const [enteredDate, setEnteredDate] = useState('');
 
+    //Atlernate way to avoid using multiple state
+    // const [userInput, updateInput] = useState({
+    //     enteredTitle: '', enteredAmount: '', enteredDate: ''
+    // })
+
     const titleChangeHandler = (event) => {
         const submittedTitle = event.target.value;
         setEnteredTitle(submittedTitle)
         console.log(submittedTitle);
+        // updateInput({
+        //     ...userInput,
+        //     enteredTitle: submittedTitle
+        // })
+        // updateInput((prevState) => { 
+        //   return {...prevState,enteredTitle:event.target.value}
+        // })
     }
 
     const amountChangeHandler = (event) => {
-            const submittedAmount = event.target.value;
-            setEnteredAmount(submittedAmount);
-            console.log(submittedAmount);
+        const submittedAmount = event.target.value;
+        setEnteredAmount(submittedAmount);
+        console.log(submittedAmount);
+        // updateInput({
+        //     ...userInput,
+        //     enteredAmount: submittedAmount
+        // })
     }
 
-    const dateChangeHandler = (event) =>{
+    const dateChangeHandler = (event) => {
         const submittedDate = event.target.value;
         setEnteredDate(submittedDate);
         console.log(submittedDate);
+        // updateInput({
+        //     ...userInput,
+        //     enteredDate: submittedDate
+        // })
     }
 
     return (<form>
