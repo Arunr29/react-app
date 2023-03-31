@@ -30,12 +30,16 @@ function App() {
       date: new Date(2021, 5, 12),
     },
   ];
+  const onExpenseHandler = (event) => {
+    console.log("In App.js");
+    console.log(event);
+  }
   // return React.createElement('div', {},
   //   React.createElement('h2', {}, "Let's get started!",
   //     React.createElement(ExpenseData, { items: expenses })))
   return (
     <div>
-      <NewExpense />
+      <NewExpense onAddExpense={onExpenseHandler}/>
       <ExpenseData items={expenses} />
     </div>
   );
