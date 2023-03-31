@@ -7,7 +7,7 @@ function ExpenseItem(props) {
 
   let currentTitle = props.title;
   const dollar = "$";
-  const [title, setTitle] = useState(currentTitle); //syntax using state
+  const [title, setTitle] = useState(currentTitle); //syntax using state //default value will be passed
 
   //adding a click event introducing state
   const clickHandler = () => {
