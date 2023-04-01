@@ -86,3 +86,13 @@ because a regular variables will not do the trick
 with state, however you can set and change values in current component.
 %State really is separated on a per component instance basis.
 We can use multiple state in the components.
+
+Key prop?
+it's a built in HTML element, you can always add this.
+And if you do add it, if you add the key
+to your component or HTML element,
+then you can help React identify the individual items.
+Eg(id)
+key={obj.id}
+
+

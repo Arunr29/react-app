@@ -3,6 +3,7 @@ import './ExpenseData.css';
 import Card from "../UI/Card";
 import React, { useState } from "react";
 import ExpensesFilter from "../FilterExpense/ExpensesFilter";
+import ExpenseList from "./ExpenseList";
 
 function ExpenseData(props) {
 
@@ -10,15 +11,24 @@ function ExpenseData(props) {
 
   const filterExpense = (event) => {
     console.log("ExpenseData.js");
-    // console.log(event);
     updatedValue(event)
   }
+
+
+  // using higher order functions to filter and map the expenses
+
+  const filteredDate = props.items.filter(data => (data.date.getFullYear().toString()) === (fileredValue));
+  console.log(filteredDate.length == 0 ? "no data" : "Data");
+
+
 
   return (
     <div>
       <Card className="expenses">
         <ExpensesFilter setYear={fileredValue} displayExpense={filterExpense} />
-        <ExpenseItem
+        <ExpenseList items={filteredDate} />
+
+        {/* <ExpenseItem
           title={props.items[0].title}
           amount={props.items[0].amount}
           date={props.items[0].date} />
@@ -33,7 +43,7 @@ function ExpenseData(props) {
         <ExpenseItem
           title={props.items[3].title}
           amount={props.items[3].amount}
-          date={props.items[3].date} />
+          date={props.items[3].date} /> */}
       </Card>
     </div>
   );
