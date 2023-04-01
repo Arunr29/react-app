@@ -10,22 +10,24 @@ function ExpenseItem(props) {
   const [title, setTitle] = useState(currentTitle); //syntax using state //default value will be passed
 
   //adding a click event introducing state
-  const clickHandler = () => {
-      setTitle("Updated!");
-    console.log(title);
-  }
+  // const clickHandler = () => {
+  //     setTitle("Updated!");
+  //   console.log(title);
+  // }
   return (
-    <Card className="expense-item">
-      <ExpenseDate date={props.date} />
-      <div className="expense-item__description">
-        <h2>{title}</h2>
-        <div className="expense-item__price">
-          {props.amount}
-          {dollar}
+    <li>
+      <Card className="expense-item">
+        <ExpenseDate date={props.date} />
+        <div className="expense-item__description">
+          <h2>{props.title}</h2>
+          <div className="expense-item__price">
+            {props.amount}
+            {dollar}
+          </div>
+          {/* <button onClick={clickHandler}>Change Title</button> */}
         </div>
-        <button onClick={clickHandler}>Change Title</button>
-      </div>
-    </Card>
+      </Card>
+    </li>
   );
 }
 
