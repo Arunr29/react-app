@@ -53,7 +53,7 @@ function ExpenseForm(props) {
 
         const expenseForm = {
             title: enteredTitle,
-            amount: enteredAmount,
+            amount: +enteredAmount,
             date: new Date(enteredDate)
         }
         //Function calling from NewExpense.js using prop
